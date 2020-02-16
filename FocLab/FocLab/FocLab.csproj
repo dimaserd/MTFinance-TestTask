@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Docs\**" />
+    <Compile Remove="wwwroot\FileCopies\**" />
+    <Compile Remove="wwwroot\FileCopyInfos\**" />
+    <Content Remove="wwwroot\Docs\**" />
+    <Content Remove="wwwroot\FileCopies\**" />
+    <Content Remove="wwwroot\FileCopyInfos\**" />
+    <EmbeddedResource Remove="wwwroot\Docs\**" />
+    <EmbeddedResource Remove="wwwroot\FileCopies\**" />
+    <EmbeddedResource Remove="wwwroot\FileCopyInfos\**" />
+    <None Remove="wwwroot\Docs\**" />
+    <None Remove="wwwroot\FileCopies\**" />
+    <None Remove="wwwroot\FileCopyInfos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\src\App.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="wwwroot\src\Extensions.ts" />
+    <TypeScriptCompile Remove="wwwroot\src\ExtensionsTests.ts" />
+    <TypeScriptCompile Remove="wwwroot\src\Requester.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.1" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.9" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.1" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.7.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FocLab.Api\FocLab.Api.csproj" />
+    <ProjectReference Include="..\FocLab.Logic\FocLab.Logic.csproj" />
+  </ItemGroup>
+
+</Project>

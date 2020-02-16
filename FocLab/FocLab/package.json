@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development --watch",
+    "release-test": "webpack",
+    "release": "webpack --mode=production",
+    "publish": "npm run release && dotnet publish -c Release"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.1",
+    "clean-webpack-plugin": "1.0.1",
+    "css-loader": "2.1.0",
+    "html-webpack-plugin": "4.0.0-beta.5",
+    "mini-css-extract-plugin": "0.5.0",
+    "ts-loader": "5.3.3",
+    "typescript": "3.3.3",
+    "webpack": "4.29.3",
+    "webpack-cli": "3.2.3"
+  },
+  "dependencies": {
+    "@aspnet/signalr": "^1.1.4",
+    "@types/bootstrap-datepicker": "0.0.13",
+    "@types/jquery": "^3.3.31",
+    "@types/node": "^12.0.7",
+    "@types/popper.js": "^1.11.0",
+    "bootstrap": "^4.3.1",
+    "install": "^0.12.2",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "npm": "^6.9.0",
+    "popper.js": "^1.12.9"
+  }
+}

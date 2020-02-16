@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Серверы</title>
+</head>
+<body>
+
+    <div class="container">
+
+
+
+        <h1>Серверы</h1>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="btn btn-success" id="create-server-btn">
+                    Создать сервер
+                </div>
+                <div class="btn btn-danger" id="delete-servers-btn">
+                    Удалить выдленные
+                </div>
+            </div>
+        </div>
+
+        <div style="height:30px">
+
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Создано
+                        </th>
+                        <th>
+                            Удалено
+                        </th>
+                        <th>
+                            Удалить
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="servers-table-body">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="total-usage-info">
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Мои скрипты-->
+    <script src="../src/Extensions.js"></script>
+    <script src="src/Requester.js"></script>
+    <script src="src/App.js"></script>
+</body>
+</html>

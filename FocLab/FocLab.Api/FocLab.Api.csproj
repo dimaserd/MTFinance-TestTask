@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <FrameworkReference>Microsoft.AspNetCore.App</FrameworkReference>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FocLab.Logic\FocLab.Logic.csproj" />
+    <ProjectReference Include="..\FocLab.Model\FocLab.Model.csproj" />
+  </ItemGroup>
+
+</Project>
